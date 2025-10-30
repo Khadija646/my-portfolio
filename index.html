@@ -1,28 +1,96 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>khadija Manzoor — Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Khadija Manzoor — Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>khadija manzoor</h1>
-    <p>Computer Science student passionate about technology and innovation.</p>
-  </header>
+  <div class="container">
 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>I am a CS student interested in web development, programming, and creating interactive digital solutions.</p>
-    </section>
+    <!-- header -->
+    <header class="hero">
+      <div class="title">
+        <h1>Khadija Manzoor</h1>
+        <p class="lead">Computer Science student passionate about technology and building useful web apps.</p>
+      </div>
 
-    <section>
-  <h2>Projects</h2>
-  <ul>
-    <li><strong>Personal Portfolio Website:</strong> My first live project using HTML & CSS.</li>
-    <li><strong>Student Management System:</strong> A C++ project to manage student data.</li>
-    <li><strong>Weather App:</strong> Displays live weather data using an API.</li>
-  </ul>
-</section>
+      <div class="meta">
+        <!-- Add profile.jpg to repo and change src if needed -->
+        <img src="profile.jpg" alt="Khadija" style="width:96px;height:96px;border-radius:12px;object-fit:cover;box-shadow:0 6px 18px rgba(0,0,0,0.06);" />
+        <div style="height:8px"></div>
+        <a href="mailto:youremail@example.com" style="display:inline-block;margin-top:8px;text-decoration:none;background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;">Contact</a>
+      </div>
+    </header>
+
+    <!-- main grid -->
+    <div class="grid">
+      <!-- main column -->
+      <main class="card">
+        <section class="about">
+          <h2>About Me</h2>
+          <p>I am a Computer Science undergraduate interested in web development, programming and building practical solutions. I enjoy experimenting with frontend design and building small projects to learn new skills.</p>
+        </section>
+
+        <section class="projects" style="margin-top:18px">
+          <h2>Projects</h2>
+
+          <div class="project">
+            <div class="pill">1</div>
+            <div>
+              <strong>Personal Portfolio Website</strong>
+              <div class="small">Live site hosted on GitHub Pages. Built with HTML & CSS.</div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="pill">2</div>
+            <div>
+              <strong>Student Management System</strong>
+              <div class="small">C++ project for managing student records and grades.</div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="pill">3</div>
+            <div>
+              <strong>Weather App</strong>
+              <div class="small">Fetches live weather using a free API and displays results.</div>
+            </div>
+          </div>
+
+          <div style="margin-top:14px">
+            <a href="#" style="text-decoration:none;color:var(--accent);font-weight:600;">View more projects →</a>
+          </div>
+        </section>
+      </main>
+
+      <!-- sidebar -->
+      <aside class="sidebar card">
+        <h2>Quick links</h2>
+        <div class="contact small">
+          <div><strong>Location:</strong> Pakistan</div>
+          <div><strong>Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></div>
+          <div><strong>GitHub:</strong> <a href="https://github.com/khadija646">github.com/khadija646</a></div>
+        </div>
+
+        <h2 style="margin-top:18px">Skills</h2>
+        <ul style="margin:0;padding-left:18px" class="small">
+          <li>HTML & CSS</li>
+          <li>C / C++</li>
+          <li>Basic JavaScript</li>
+        </ul>
+
+        <h2 style="margin-top:18px">Education</h2>
+        <div class="small">4th year MBBS / Computer Science student</div>
+      </aside>
+    </div>
+
+    <footer>
+      © 2025 Khadija Manzoor — Built with ❤️ and HTML/CSS
+    </footer>
+  </div>
+</body>
+</html>
